@@ -43,7 +43,7 @@
             <a href="#">Registrarse</a> <i class="fas fa-user-plus fa-lg"></i>
           </p>
           <p class="forget-password">
-            <a href="../../../reset-password.php">¿Olvidaste tu contraseña? <i class="fas fa-key"></i> </a>
+            <a href="/reset-password.php">¿Olvidaste tu contraseña? <i class="fas fa-key"></i> </a>
           </p>
         </form>
       </div>

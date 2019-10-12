@@ -8,10 +8,10 @@ if (isset($_POST["reset-password-submit"])) {
     $passwordRepeat = $_POST["pwd-repeat"];
 
     if(empty($password) || empty($passwordRepeat)){
-       header("Location: ../index.php");
+       header("Location: /index.php/");
        exit();
     } else if ($password != $passwordRepeat ) {
-        header("Location: ../create-new-password.php?newpwd=pwdnotsame");
+        header("Location: /create-new-password.php?newpwd=pwdnotsame/");
         exit();
     }
     
@@ -82,7 +82,7 @@ if (isset($_POST["reset-password-submit"])) {
                                 } else {
                                     mysqli_stmt_bind_param($stmt, "s", $tokenEmail);
                                     mysqli_stmt_execute($stmt);
-                                    header("Location: ../modulos/login/index.php?newpwd-passwordupdated");
+                                    header("Location: /modulos/login/index.php?newpwd-passwordupdated/");
                                 }
 
 
@@ -97,5 +97,5 @@ if (isset($_POST["reset-password-submit"])) {
     
     
 } else{
-    header("Location: ../index.php");
+    header("Location: /index.php/");
 }

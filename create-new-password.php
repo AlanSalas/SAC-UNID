@@ -21,7 +21,7 @@
             if (ctype_xdigit($selector) !== false && ctype_xdigit($validator) !== false ) {
                ?>
 
-               <form action="includes/reset-password.php" method="post">
+               <form action="includes/reset-password.php/" method="post">
                 <input type="hidden" name="selector" value="<?php echo $selector; ?>">
                 <input type="hidden" name="validator" value="<?php echo $validator; ?>">
                 <input type="password" name="pwd" placeholder="Escribe tu nueva contraseña">
