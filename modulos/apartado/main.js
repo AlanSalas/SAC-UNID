@@ -224,4 +224,13 @@ $(document).ready(function() {
     no_results_text: "No se encontraron resultados"
   });
 
+  $('input.timepicker').timepicker({
+    timeFormat: 'h:mm p',
+    interval: 30,
+    minTime: '7',
+    maxTime: '10:00pm',
+    dynamic: false,
+    dropdown: true,
+    scrollbar: true
+   });
 });
